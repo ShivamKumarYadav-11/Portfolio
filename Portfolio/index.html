@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Kumar Yadav | SKY</title>
+    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Preloader -->
+    <div id="preloader">
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs">
+            <div class="child">
+                <h1>Hi </h1>
+                <h1>SKY</h1>
+            </div>
+            <!-- ADD THIS -->
+            <div class="prog-wrap">
+                <span class="prog-count" id="progCount">0%</span>
+                <div class="prog-track">
+                    <div class="prog-fill" id="progFill"></div>
+                </div>
+            </div>
+        </div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- <a href="#home" class="nav-logo"><span>.</span></a> -->
+            <img src="src/icon.png" alt="icon" style="height: 50px;" oncontextmenu="return false;">
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button class="download-btn" id="downloadResume"><i class="fas fa-download"></i> Download
+                    Resume</button>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <!-- <a href="#experience">Experience</a> -->
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+        <button class="download-button" id="downloadResumeMobile"><i class="fas fa-file-pdf"></i>Download Resume</a>
+
+    </div>
+
+    <!-- Home — Info LEFT, Image RIGHT (desktop) — Image FIRST on mobile -->
+    <section class="home section" id="home">
+        <div class="home-container">
+            <div class="home-content">
+                <p class="home-greeting">Hello, I'm </p>
+                <h1 class="home-name">Shivam Kumar Yadav</h1>
+                <div class="typewriter-container">
+                    <span class="typewriter-text" id="typewriter"></span>
+                </div>
+                <p class="home-desc">I am a final year Computer Science student passionate about web development and
+                    problem solving. I enjoy building responsive and user-friendly web applications while continuously
+                    learning new technologies.</p>
+                <div class="home-buttons">
+                    <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+                    <button class="btn-secondary" id="heroDownloadBtn"><i class="fas fa-download"></i> Download
+                        Resume</button>
+                </div>
+                <div class="home-socials">
+                    <a href="https://github.com/ShivamKumarYadav-11/" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shivam-kumar-yadav-869147349" target="_blank"
+                        title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- <a href="https://twitter.com/shivamyadav" target="_blank" title="Twitter"><i
+                            class="fab fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/shivamyadav" target="_blank" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://telegram.me/shivamyadav" target="_blank" title="Telegram"><i
+                            class="fab fa-telegram-plane"></i></a> -->
+                </div>
+            </div>
+            <div class="home-image">
+                <div class="home-image-wrapper">
+                    <div class="home-image-inner">
+                        <img src="src/Shivam.png" alt="Shivam Yadav" oncontextmenu="return false;">
+                    </div>
+                    <!-- Floating Badge 1: EXPERTISE -->
+                    <div class="float-badge float-badge-1">
+                        <div class="fb-inner">
+                            <div class="float-badge-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="float-badge-text">
+                                <span class="float-badge-label">Expertise</span>
+                                <span class="float-badge-value">MERN Stack</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2: PROBLEMS -->
+                    <div class="float-badge float-badge-2">
+                        <div class="fb-inner">
+                            <div class="float-badge-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="float-badge-text">
+                                <span class="float-badge-label">Problems</span>
+                                <span class="float-badge-value">100+ Solved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+        <div id="skyimg">
+            <img src="src/image.png" alt="image" oncontextmenu="return false;">
+        </div>
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">Get To Know Me</p>
+                <h2 class="section-title about-text">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="src/Shivam.png" alt="About Shivam" oncontextmenu="return false;">
+                    <!-- <div class="about-image-badge">
+                        <div class="number">2+</div>
+                        <div class="text">Projects Built</div>
+                    </div> -->
+                </div>
+                <div class="about-content reveal">
+                    <p class="about-text">I'm <strong>Shivam Kumar Yadav</strong> , a final year Computer Science
+                        student passionate about
+                        web development and problem solving. I enjoy building responsive and user-friendly web
+                        applications while continuously learning new technologies.</p>
+                    <p class="about-text">I specialize in the MERN Stack (MongoDB, Express.js, React, Node.js) and have
+                        hands-on experience with SQL databases, AI tools, and version control systems like Git & GitHub.
+                        I'm constantly exploring modern development practices to improve my skills.</p>
+                    <div class="about-highlights">
+                        <div class="about-highlight-item"><i class="fas fa-circle"></i> MERN Stack Development</div>
+                        <div class="about-highlight-item"><i class="fas fa-circle"></i> React & Frontend Expert</div>
+                        <!-- <div class="about-highlight-item"><i class="fas fa-circle"></i> REST API Development</div> -->
+                        <div class="about-highlight-item"><i class="fas fa-circle"></i> Git & Version Control</div>
+                        <div class="about-highlight-item"><i class="fas fa-circle"></i> Responsive Design</div>
+                        <div class="about-highlight-item"><i class="fas fa-circle"></i> Problem Solving</div>
+                    </div>
+                    <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+        <div class="circle"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle sky">What I Know</p>
+                <h2 class="section-title skillbg">My Skills</h2>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-card skill-js skill-card-lg">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <!-- <p class="skill-level">Advanced</p> -->
+                    <div class="skill-tags">
+                        <span class="skill-tag-pill">ES6+</span>
+                        <span class="skill-tag-pill">DOM</span>
+                        <span class="skill-tag-pill">Async</span>
+                        <span class="skill-tag-pill">Promises</span>
+                    </div>
+                </div>
+                <div class="skill-card skill-react">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h3 class="skill-name">React JS</h3>
+                    <!-- <p class="skill-level">Advanced</p> -->
+                    <div class="skill-tags">
+                        <span class="skill-tag-pill">Hooks</span>
+                        <span class="skill-tag-pill">Router</span>
+                        <span class="skill-tag-pill">Context</span>
+                        <span class="skill-tag-pill">JSX</span>
+                    </div>
+                </div>
+                <div class="skill-card skill-node">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <h3 class="skill-name">Node.js</h3>
+                    <!-- <p class="skill-level">Intermediate</p> -->
+                    <div class="skill-tags">
+                        <span class="skill-tag-pill">Express</span>
+                        <span class="skill-tag-pill">REST API</span>
+                        <span class="skill-tag-pill">Auth</span>
+                        <span class="skill-tag-pill">NPM</span>
+                    </div>
+                </div>
+                <div class="skill-card skill-express skill-card-lg">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3 class="skill-name">Express.js</h3>
+                    <!-- <p class="skill-level">Intermediate</p> -->
+                    <div class="skill-tags">
+                        <span class="skill-tag-pill">Routing</span>
+                        <span class="skill-tag-pill">Middleware</span>
+                        <span class="skill-tag-pill">Security</span>
+                    </div>
+                </div>
+                <div class="skill-card skill-mongo">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="skill-name">MongoDB</h3>
+                    <!-- <p class="skill-level">Intermediate</p> -->
+                    <div class="skill-tags">
+                        <span class="skill-tag-pill">Mongoose</span>
+                        <span class="skill-tag-pill">CRUD</span>
+                        <span class="skill-tag-pill">Schema</span>
+                        <span class="skill-tag-pill">Queries</span>
+                    </div>
+                </div>
+                <div class="skill-card skill-git">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3 class="skill-name">Git & GitHub</h3>
+                    <!-- <p class="skill-level">Advanced</p> -->
+                    <div class="skill-tags">
+                        <span class="skill-tag-pill">Branching</span>
+                        <span class="skill-tag-pill">PR</span>
+                        <span class="skill-tag-pill">Merge</span>
+                        <span class="skill-tag-pill">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education section" id="education">
+        <div class="container">
+            <div id="play"></div>
+            <div class="section-header reveal education-container">
+                <p class="section-subtitle">My Qualification</p>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="education-timeline reveal">
+                <div class="education-item">
+                    <div class="certificate-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <!-- <i class="fa-solid fa-graduation-cap edu-watermark"></i> -->
+                    <span class="education-year">2023 - 2027</span>
+                    <h3 class="education-degree">B.Tech in Computer Science</h3>
+                    <p class="education-institution"><i class="fas fa-university"></i> Shri Ramswaroop Memorial
+                        University</p>
+                    <div class="edu-stats">
+                        <div class="edu-stats-row"><span class="label scaleAnimation">CGPA</span><span
+                                class="value scaleAnimation">8.34</span></div>
+                        <div class="edu-bar-bg">
+                            <div class="edu-bar-fill edu-fill active" style="--fill-width:80%;background:var(--dark);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="certificate-icon"><i class="fa-solid fa-school"></i></div>
+                    <!-- <i class="fa-solid fa-school edu-watermark"></i> -->
+                    <span class="education-year">2022</span>
+                    <h3 class="education-degree">Intermediate (XII)</h3>
+                    <p class="education-institution"><i class="fas fa-university"></i> ABIC / UP Board</p>
+                    <div class="edu-stats">
+                        <div class="edu-stats-row"><span class="label scaleAnimation">Percentage</span><span
+                                class="value scaleAnimation">78%</span>
+                        </div>
+                        <div class="edu-bar-bg">
+                            <div class="edu-bar-fill edu-fill active" style="--fill-width:78%;background:var(--dark);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="certificate-icon"><i class="fa-solid fa-school"></i></div>
+                    <!-- <i class="fa-solid fa-school edu-watermark"></i> -->
+                    <span class="education-year">2020</span>
+                    <h3 class="education-degree">High School (X)</h3>
+                    <p class="education-institution"><i class="fas fa-university"></i> ABIC / UP Board</p>
+                    <div class="edu-stats">
+                        <div class="edu-stats-row"><span class="label scaleAnimation">Percentage</span><span
+                                class="value scaleAnimation">83%</span>
+                        </div>
+                        <div class="edu-bar-bg">
+                            <div class="edu-bar-fill edu-fill active" style="--fill-width:83%;background:var(--dark);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">What I've Built</p>
+                <h2 class="section-title">My Projects</h2>
+            </div>
+            <div class="projects-grid reveal" id="projectsGrid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="src/Code.png" alt="Project 1">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <h3 class="project-title">Code Analyzer</h3>
+                        <p class="project-desc">A tool that reads your code and counts the total variables, loops, and
+                            functions.</p>
+                        <div class="project-links">
+                            <a href="https://codeanalyzerks2.netlify.app/" class="project-link live"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ShivamKumarYadav-11/Code-Analyzer" class="project-link code"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="src/Github.png" alt="Project 2">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Express.js</span>
+                            <span class="project-tag">REST API</span>
+                        </div>
+                        <h3 class="project-title">GitHub Profile Explorer</h3>
+                        <p class="project-desc">A simple tool that fetches any GitHub user's stats, including their
+                            total repos, followers, following, join date, and last update.</p>
+                        <div class="project-links">
+                            <a href="https://viewgithubusers.netlify.app/" class="project-link live"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ShivamKumarYadav-11/GitHub-Profile-Explorer"
+                                class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hidden Project Cards -->
+                <!-- <div class="project-card hidden-card">
+                    <div class="project-image">
+                        <img src="https://picsum.photos/seed/project3mern/600/400.jpg" alt="Project 3">
+                        <div class="project-image-overlay"></div>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Redux</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project Three</h3>
+                        <p class="project-desc">An e-commerce platform with state management using Redux, payment
+                            integration, admin dashboard, and real-time order tracking.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="project-card hidden-card">
+                    <div class="project-image">
+                        <img src="https://picsum.photos/seed/project4mern/600/400.jpg" alt="Project 4">
+                        <div class="project-image-overlay"></div>
+                        <div class="project-tags">
+                            <span class="project-tag">MERN</span>
+                            <span class="project-tag">Socket.io</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project Four</h3>
+                        <p class="project-desc">A real-time chat application with Socket.io, group messaging, file
+                            sharing, online status indicators, and message encryption.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="view-all-container reveal">
+                <button class="view-all-btn" id="viewAllProjects">
+                    <span class="btn-text-show">View All Projects</span>
+                    <span class="btn-text-hide">Show Less Projects</span>
+                    <i class="fas fa-chevron-down btn-icon-show"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <!-- <section class="experience section" id="experience"> -->
+    <!-- <div class="container"> -->
+    <!-- <div class="section-header reveal">
+                <p class="section-subtitle">Where I've Worked</p>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="experience-timeline reveal" id="experienceTimeline">
+                <div class="experience-card">
+                    <div class="experience-card-header">
+                        <div class="experience-card-top">
+                            <div class="experience-icon"><i class="fas fa-code"></i></div>
+                            <div class="experience-info">
+                                <h3>MERN Stack Developer</h3>
+                                <p class="experience-company"><i class="fas fa-building"></i> Company Name</p>
+                            </div>
+                        </div>
+                        <div class="experience-duration">
+                            <span class="experience-date">2024 - Present</span>
+                            <br>
+                            <span class="experience-type">Full Time</span>
+                        </div>
+                    </div>
+                    <p class="experience-desc">Working on full-stack web applications using MongoDB, Express.js, React,
+                        and Node.js. Collaborating with cross-functional teams to deliver high-quality software
+                        solutions.</p>
+                </div> -->
+    <!-- Hidden Experience Cards -->
+    <!-- <div class="experience-card hidden-card">
+                    <div class="experience-card-header">
+                        <div class="experience-card-top">
+                            <div class="experience-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div class="experience-info">
+                                <h3>Frontend Developer Intern</h3>
+                                <p class="experience-company"><i class="fas fa-building"></i> Startup Inc.</p>
+                            </div>
+                        </div>
+                        <div class="experience-duration">
+                            <span class="experience-date">Jun 2023 - Dec 2023</span>
+                            <br>
+                            <span class="experience-type">Internship</span>
+                        </div>
+                    </div>
+                    <p class="experience-desc">Developed responsive user interfaces using React.js, integrated REST
+                        APIs, implemented state management with Redux, and participated in code reviews and agile
+                        sprints.</p>
+                </div>
+                <div class="experience-card hidden-card">
+                    <div class="experience-card-header">
+                        <div class="experience-card-top">
+                            <div class="experience-icon"><i class="fas fa-server"></i></div>
+                            <div class="experience-info">
+                                <h3>Backend Developer Freelance</h3>
+                                <p class="experience-company"><i class="fas fa-globe"></i> Freelance</p>
+                            </div>
+                        </div>
+                        <div class="experience-duration">
+                            <span class="experience-date">Jan 2023 - May 2023</span>
+                            <br>
+                            <span class="experience-type">Freelance</span>
+                        </div>
+                    </div>
+                    <p class="experience-desc">Built and deployed RESTful APIs using Node.js and Express.js, designed
+                        MongoDB schemas, implemented authentication with JWT, and set up CI/CD pipelines.</p>
+                </div>
+            </div>
+            <div class="view-all-container reveal">
+                <button class="view-all-btn" id="viewAllExperience">
+                    <span class="btn-text-show">View All Experience</span>
+                    <span class="btn-text-hide">Show Less Experience</span>
+                    <i class="fas fa-chevron-down btn-icon-show"></i>
+                </button>
+            </div>
+        </div> -->
+    <!-- </section> -->
+
+    <!-- Certificates -->
+    <section class="certificates section" id="certificates">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle certsub">My Achievements</p>
+                <h2 class="section-title certtext">Certificates</h2>
+            </div>
+            <div class="certificates-grid reveal" id="certificatesGrid">
+                <div class="certificate-card cert-js">
+                    <i class="fab fa-js-square cert-watermark"></i>
+                    <div class="certificate-icon"><i class="fab fa-js-square"></i></div>
+                    <h3 class="certificate-title">JavaScript ES6</h3>
+                    <p class="certificate-issuer"><i class="fas fa-award"></i> unstop</p>
+                    <!-- <div class="certificate-meta"> -->
+                    <span class="certificate-date"><i class="far fa-calendar-alt"></i> july 2026</span>
+                    <a href="https://unstop.com/certificate-preview/3774cd1c-3e1e-4fc9-8fe7-d4cec0cae2f6"
+                        class="certificate-verify"><i class="fas fa-external-link-alt"></i> View certificate</a>
+                    <!-- </div> -->
+                </div>
+                <div class="certificate-card cert-node">
+                    <i class="fab fa-node-js cert-watermark"></i>
+                    <div class="certificate-icon"><i class="fab fa-node-js"></i></div>
+                    <h3 class="certificate-title">Node.js </h3>
+                    <p class="certificate-issuer"><i class="fas fa-award"></i> unstop</p>
+                    <!-- <div class="certificate-meta"> -->
+                    <span class="certificate-date"><i class="far fa-calendar-alt"></i> july 2026</span>
+                    <a href="https://unstop.com/certificate-preview/760a276b-013e-49f5-bbdf-1a07083dc780"
+                        class="certificate-verify"><i class="fas fa-external-link-alt"></i> View certificate</a>
+                    <!-- </div> -->
+                </div>
+
+                <!-- Hidden Certificate Cards -->
+                <!-- <div class="certificate-card cert-react hidden-card">
+                    <i class="fab fa-react cert-watermark"></i>
+                    <div class="certificate-icon"><i class="fab fa-react"></i></div>
+                    <h3 class="certificate-title">React Developer Certificate</h3>
+                    <p class="certificate-issuer"><i class="fas fa-award"></i> Issued by Organization</p>
+                    <div class="certificate-meta">
+                    <span class="certificate-date"><i class="far fa-calendar-alt"></i> Mar 2024</span>
+                    <a href="#" class="certificate-verify"><i class="fas fa-external-link-alt"></i> View certificate</a>
+                    </div>
+                </div>
+
+                <div class="certificate-card cert-git hidden-card">
+                    <i class="fab fa-git-alt cert-watermark"></i>
+                    <div class="certificate-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3 class="certificate-title">Git & GitHub Mastery</h3>
+                    <p class="certificate-issuer"><i class="fas fa-award"></i> Issued by Organization</p>
+                    <div class="certificate-meta">
+                    <span class="certificate-date"><i class="far fa-calendar-alt"></i> Jul 2024</span>
+                    <a href="#" class="certificate-verify"><i class="fas fa-external-link-alt"></i> View certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card cert-mongo hidden-card">
+                    <i class="fas fa-database cert-watermark"></i>
+                    <div class="certificate-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="certificate-title">MongoDB Database Admin</h3>
+                    <p class="certificate-issuer"><i class="fas fa-award"></i> Issued by Organization</p>
+                    <div class="certificate-meta">
+                    <span class="certificate-date"><i class="far fa-calendar-alt"></i> Sep 2024</span>
+                    <a href="#" class="certificate-verify"><i class="fas fa-external-link-alt"></i> View certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card cert-express hidden-card">
+                    <i class="fas fa-server cert-watermark"></i>
+                    <div class="certificate-icon"><i class="fas fa-server"></i></div>
+                    <h3 class="certificate-title">Express.js API Development</h3>
+                    <p class="certificate-issuer"><i class="fas fa-award"></i> Issued by Organization</p>
+                    <div class="certificate-meta">
+                    <span class="certificate-date"><i class="far fa-calendar-alt"></i> Nov 2024</span>
+                    <a href="#" class="certificate-verify"><i class="fas fa-external-link-alt"></i> View certificate</a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="view-all-container reveal">
+                <button class="view-all-btn" id="viewAllCertificates">
+                    <span class="btn-text-show">View All Certificates</span>
+                    <span class="btn-text-hide">Show Less Certificates</span>
+                    <i class="fas fa-chevron-down btn-icon-show"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">Get In Touch</p>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="contact-left">
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:shivamyadav@email.com">ydvshiv4705@email.com</a></p>
+                            </div>
+                        </div>
+                        <!-- <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                            </div>
+                        </div> -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/ShivamKumarYadav-11/" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shivam-kumar-yadav-869147349" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="https://twitter.com/shivamyadav" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/shivamyadav" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://telegram.me/shivamyadav" target="_blank"><i
+                                class="fab fa-telegram-plane"></i></a> -->
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="yourname@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Project Inquiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">Shivam kumar Yadav</a>
+                    <p>Passionate MERN Stack Developer building modern web applications with clean code and intuitive
+                        design.</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/ShivamKumarYadav-11/" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shivam-kumar-yadav-869147349" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="https://twitter.com/shivamyadav" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/shivamyadav" target="_blank"><i class="fab fa-instagram"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#education"><i class="fas fa-chevron-right"></i> Education</a></li>
+                        <!-- <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a></li> -->
+                        <li><a href="#certificates"><i class="fas fa-chevron-right"></i> Certificates</a></li>
+                        <li><a href="#footer" id="footerDownload"><i class="fas fa-chevron-right"></i> Download
+                                Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span>Shivam Kumar Yadav | SKY</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"><i class="fas fa-check-circle"></i> <span id="toastMessage">Message sent
+            successfully!</span></div>
+
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"
+        integrity="sha512-oJ8QbaQThQoJZ7oEv+29jfPM6CcP+zUxh3PKJs1vyOhx0UraUrE7PQgeItu3dOuCJyrzWpoYMsVjkkPEBzbUqw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"
+        integrity="sha512-OaIE7ud4P04EhnBuhEcm0wQSceIxbi2pV03oBLS/+F6ampfxsnxcIxOp7H2eF9G7N0kEht0VAzOLG+dTLSo17Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
